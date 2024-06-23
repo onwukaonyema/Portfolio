@@ -4,142 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/min.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <meta
+      name="description"
+      content="A brief description of your website for SEO purposes."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta
+      property="og:description"
+      content="A brief description of your website for social media sharing."
+    />
+    <meta property="og:image" content="https://yourwebsite.com/image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourwebsite.com/" />
+    <meta property="twitter:title" content="Your Website Title" />
+    <meta
+      property="twitter:description"
+      content="A brief description of your website for social media sharing."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yourwebsite.com/image.jpg"
+    />
+
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Your Name or Company" />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="/assets/js/script.js" defer></script>
     <title>Onwuka Onyemaechi - Portfolio</title>
   </head>
-  <script>
-    const openNav = () => {
-      document.getElementById("nav").style.width = "100%";
-      document.getElementById("menu-btn").style.zIndex = "1";
-      document.getElementById("menu-btn2").style.zIndex = "999";
-      console.log("nav open");
-    };
-    const closeNav = () => {
-      document.getElementById("nav").style.width = "0";
-      document.getElementById("menu-btn").style.zIndex = "999";
-      document.getElementById("menu-btn2").style.zIndex = "1";
-      console.log("nav closed");
-    };
-    function darkMode() {
-      document.querySelector("body").classList.add("dark");
-      console.log("dark mode on");
-    }
 
-    /*function lightMode (){
-      document.getElementById("dark-mode").style.zIndex = "1";
-      document.getElementById("light-mode").style.zIndex = "999";
-      document.querySelector("body").classList.add("light")
-       console.log("light mode on");}*/
-
-    function skills() {
-      document.querySelector(".down").className = "dark-down";
-      document.querySelector(".pj-item").className = "dark-pj-item";
-      document.querySelector(".pj-item1").className = "dark-pj-item1";
-      document.querySelector(".pj-item2").className = "dark-pj-item2";
-      document.querySelector(".con").className = "dark-con";
-      document.querySelector(".h33").className = "dark-h33";
-
-
-      document.querySelector(".skills").className = "dark-skills";
-      document.querySelector(".ex").className = "dark-ex";
-      document.querySelector(".work").className = "dark-work";
-      document.querySelector(".down1").className = "dark-down1";
-      document.querySelector(".form").className = "dark-form";
-
-      document.querySelector(".portfolio").className = "dark-portfolio";
-
-      document.querySelector(".services").className = "dark-services";
-    }
-    /*function skillslit(){
-         document.querySelector(".down").className="down";
-         document.querySelector(".skills").className="skills";
-        document.querySelector(".ex").className="ex";
-        document.querySelector(".work").className="work";
-        document.querySelector(".portfolio").className="portfolio";
-
-        document.querySelector(".services").className="services";}*/
-
-    function html() {
-      document.querySelector(".contact").className = "dark-contact";
-      document.querySelector(".contactIn").className = "dark-contactIn";
-
-      document.querySelector(".html").className = "dark-html";
-      document.querySelector(".html4").className = "dark-html";
-      document.querySelector(".html2").className = "dark-html";
-      document.querySelector(".html3").className = "dark-html";
-      document.querySelector(".html5").className = "dark-html";
-      document.querySelector(".html6").className = "dark-html";
-      document.querySelector(".serviceA").className = "dark-serviceA";
-      document.querySelector(".serviceA1").className = "dark-serviceA";
-      document.querySelector(".serviceA2").className = "dark-serviceA";
-      document.querySelector(".servC").className = "dark-servC";
-      document.querySelector(".servC1").className = "dark-servC";
-      document.querySelector(".servC2").className = "dark-servC";
-    }
-    /*function htmllit(){
-        document.querySelector(".html").className="html";
-        document.querySelector(".html4").className="html";
-        document.querySelector(".html2").className="html";
-        document.querySelector(".html3").className="html";
-        document.querySelector(".html5").className="html";
-        document.querySelector(".html6").className="html";
-        document.querySelector(".serviceA").className="serviceA";
-        document.querySelector(".serviceA1").className="serviceA";
-        document.querySelector(".serviceA2").className="serviceA";
-        document.querySelector(".servC").className="servC";
-        document.querySelector(".servC1").className="servC";
-        document.querySelector(".servC2").className="servC";
-
-
-       }*/
-    const years = setInterval(() => {
-      let count = 0;
-      count++;
-      if (count === 4) {
-        count = 3;
-      } else {
-        count = 3;
-      }
-      document.getElementById("year").innerHTML = count;
-    }, 3000);
-    const cl = setInterval(() => {
-      let count = 0;
-      count++;
-      if (count === 11) {
-        count = 10;
-      } else {
-        count = 9;
-      }
-      document.getElementById("cl").innerHTML = count;
-    }, 3000);
-    const pj = setInterval(() => {
-      let count = 0;
-      count++;
-      if (count === 13) {
-        count = 12;
-      } else {
-        count = 11;
-      }
-      document.getElementById("pj").innerHTML = count;
-    }, 3000);
-    const cof = setInterval(() => {
-      let count = 0;
-      count++;
-      if (count === 3) {
-        count = 5;
-      } else {
-        count = 5;
-      }
-      document.getElementById("cof").innerHTML = count;
-    }, 3000);
-  </script>
   <body>
+    <!--preloader-->
+    <div class="loaders">
+      <div class="loader">
+        <span></span>
+      </div>
+    </div>
     <div class="banner" role="banner" aria-roledescription="banner" id="banner">
-      <img src="logo.png" alt="logo" class="logo" />
+      <img src="/assets/images/logo.png" alt="logo" class="logo" />
       <div class="nav" id="nav" role="nav">
         <a href="#banner">Home</a>
         <a href="#contact">Contact</a>
@@ -148,11 +63,7 @@
         <a href="#skills">Skills</a>
         <a href="#project">Portfolio</a>
         <a href="#services">Services</a>
-        <i
-          class="fa fa-moon-o"
-          onclick="darkMode(); skills(); html();"
-          aria-hidden="true"
-        ></i>
+        <i class="fa fa-moon-o" id="dark-mode-toggle" aria-hidden="true"></i>
       </div>
       <i
         class="fa fa-bars"
@@ -162,18 +73,11 @@
       ></i>
       <i
         class="fa fa-times"
-        id="menu-btn2"
         onclick="closeNav()"
+        id="menu-btn2"
         aria-hidden="true"
       ></i>
-      <i
-        class="fa fa-moon-o"
-        title="Dark mode"
-        onclick="darkMode(); skills(); html();"
-        id="dark-mode"
-        aria-hidden="true"
-      ></i>
-      
+
       <div class="banner-content">
         <div class="banner-left">
           <h5 class="hd">Hello, it's Me Again</h5>
@@ -187,21 +91,27 @@
           <a href="##" class="hire-btn">Hire Me</a>
           <div class="socials">
             <p>Join Me</p>
-            <a href="https://www.github.com/doplersweb" class="icon"><i class="fa fa-github " href="##" aria-hidden="true"></i></a>
-            <a href="https://www.twitter.com/0nwuka0nyema" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/0nwuka0nyema" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/doplersweb" class="icon"
+              ><i class="fa fa-github" href="##" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.twitter.com/0nwuka0nyema" class="icon"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.instagram.com/0nwuka0nyema" class="icon"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
             <i class="fa fa-google-plus icon" aria-hidden="true"></i>
           </div>
         </div>
         <div class="banner-right">
-          <img src="intro.png" alt="illust." class="sideImg" />
+          <img src="/assets/images/intro.png" alt="illust." class="sideImg" />
         </div>
       </div>
     </div>
     <div class="introduction" id="introduction">
       <div class="intro1">
         <div class="intro1a">
-          <img src="433270.png" class="boy" alt="boy" />
+          <img src="/assets/images/433270.png" class="boy" alt="boy" />
         </div>
       </div>
       <div class="intro2">
@@ -211,8 +121,8 @@
           provide an excellent user experience.
         </h2>
         <p>
-          As a speciaist in HTML, CSS, JavaScript. I have a deep understanding of
-          the core building blocks of modern web design with a focus on
+          As a speciaist in HTML, CSS, JavaScript. I have a deep understanding
+          of the core building blocks of modern web design with a focus on
           accessbility and responsive design. I strive to deliver websites that
           look good and work seamlessly across all devices.
         </p>
@@ -228,30 +138,30 @@
       <h3>Web Development</h3>
       <div class="skillz">
         <div class="html">
-          <img src="html.png" alt="html" class="himg" />
+          <img src="/assets/images/html.png" alt="html" class="himg" />
           <h3>HTML</h3>
         </div>
         <div class="html2">
-          <img src="css.png" alt="html" class="himg" />
+          <img src="/assets/images/css.png" alt="html" class="himg" />
           <h3>CSS</h3>
         </div>
         <div class="html3">
-          <img src="js.png" alt="html" class="himg" />
+          <img src="/assets/images/js.png" alt="html" class="himg" />
 
           <h3>JavaScript</h3>
         </div>
         <div class="html5">
-          <img src="git.png" alt="html" class="himg" />
+          <img src="/assets/images/git.png" alt="html" class="himg" />
 
           <h3>GitHub</h3>
         </div>
         <div class="html6">
-          <img src="react.png" alt="html" class="himg" />
+          <img src="/assets/images/react.png" alt="html" class="himg" />
 
           <h3>React</h3>
         </div>
         <div class="html4">
-          <img src="bs.png" alt="html" class="himg" />
+          <img src="/assets/images/bs.png" alt="html" class="himg" />
 
           <h3>Bootstrap</h3>
         </div>
@@ -261,22 +171,22 @@
       <h2>Working Experience</h2>
       <div class="work">
         <div class="item">
-          <h1 id="year">0</h1>
+          <h1 id="year">4</h1>
           <h1><i class="fa fa-users" aria-hidden="true"></i></h1>
           <h4>Years Experience</h4>
         </div>
         <div class="item">
-          <h1 id="pj">0</h1>
+          <h1 id="pj">70</h1>
           <h1><i class="fa fa-briefcase" aria-hidden="true"></i></h1>
           <h4>Projects Completed</h4>
         </div>
         <div class="item">
-          <h1 id="cof">0</h1>
+          <h1 id="cof">40</h1>
           <h1><i class="fa fa-coffee" aria-hidden="true"></i></h1>
           <h4>Cups of Coffee</h4>
         </div>
         <div class="item">
-          <h1 id="cl"></h1>
+          <h1 id="cl">50</h1>
           <h1><i class="fa fa-smile-o" aria-hidden="true"></i></h1>
           <h4>Happy Clients</h4>
         </div>
@@ -354,45 +264,46 @@
       <div class="pj-items">
         <div class="pj-item">
           <a href="https://euphonious-choux-d9aee3.netlify.app/"
-            ><img src="5174540.jpg" alt="chatbot" class="bot"
+            ><img src="/assets/images/5174540.jpg" alt="chatbot" class="bot"
           /></a>
         </div>
         <div class="pj-item1">
           <a href="https://chic-pixie-7a7ddf.netlify.app/"
-            ><img src="3789317.jpg" alt=" music-player" class="bot"
+            ><img
+              src="/assets/images/3789317.jpg"
+              alt=" music-player"
+              class="bot"
           /></a>
         </div>
         <div class="pj-item2">
           <a href="https://venerable-dasik-a2842d.netlify.app/"
-            ><img src="2852869.jpg" alt=" login" class="bot"
+            ><img src="/assets/images/2852869.jpg" alt=" login" class="bot"
           /></a>
         </div>
       </div>
     </div>
     <div class="contact" id="contact">
       <h4>Let's Talk</h4>
-      <h2>Have a Project Idea<br>Feel Free to Contact</h2>
+      <h2>Have a Project Idea<br />Feel Free to Contact</h2>
       <div class="con">
-      <div class="contactIn">
-        <div class="a">
-        <div class="a1">
-          <i class="fa fa-phone cnt" aria-hidden="true"></i>
-        </div>
-        <div class="a2">
-          <p>Call:</p>
-          <p>(+234)-91-6801-4107</p>
-
-        </div>
-        </div>
-        <div class="a">
-          <div class="a1">
-            <i class="fa fa-envelope-o cnt" aria-hidden="true"></i>
+        <div class="contactIn">
+          <div class="a">
+            <div class="a1">
+              <i class="fa fa-phone cnt" aria-hidden="true"></i>
+            </div>
+            <div class="a2">
+              <p>Call:</p>
+              <p>(+234)-91-6801-4107</p>
+            </div>
           </div>
-          <div class="a2">
-            <p>Email:</p>
-            <p>Onyemakalu10@gmail.com</p>
-  
-          </div>
+          <div class="a">
+            <div class="a1">
+              <i class="fa fa-envelope-o cnt" aria-hidden="true"></i>
+            </div>
+            <div class="a2">
+              <p>Email:</p>
+              <p>Onyemakalu10@gmail.com</p>
+            </div>
           </div>
           <div class="a">
             <div class="a1">
@@ -401,35 +312,49 @@
             <div class="a2">
               <p>Location</p>
               <p>No. 19 @ Anywhere You Want Me To Be</p>
-    
             </div>
-            </div>
-      </div>
-      <div class="contactIn2">
-        <form name="contact" class="form" method="POST" data-netlify="true">
-          <p>
-            <label> Name <br> <input type="text"class="inputtext" name="name" required></label>
-          </p>
-          <p>
-            <label>Email<br> <input type="email" class="inputtext" name="email" required></label>
-          </p>
-          <p>
-            <label>Message <br> <textarea name="message" required></textarea></label>
-          </p>
-          <p>
-            <button type="submit" class="msg"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-               Send Message</button>
-          </p>
-        </form>
-        
-
-      </div>
+          </div>
+        </div>
+        <div class="contactIn2">
+          <form
+            name="contact"
+            class="form"
+            method="POST"
+            data-netlify="true"
+            onsubmit="handleSubmit(event)"
+          >
+            <p>
+              <label>
+                Name <br />
+                <input type="text" class="inputtext" name="name" required />
+              </label>
+            </p>
+            <p>
+              <label>
+                Email<br />
+                <input type="email" class="inputtext" name="email" required />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message <br />
+                <textarea name="message" required></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit" class="msg">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+                Message
+              </button>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
     <div class="footer">
-      <img src="logo.png" alt="logo" class="footer-logo">
+      <img src="/assets/images/logo.png" alt="logo" class="footer-logo" />
       <nav>
-      <a href="#banner">Home</a>
+        <a href="#banner">Home</a>
         <a href="#contact">Contact</a>
         <a href="#project">Project</a>
         <a href="#introduction">About</a>
@@ -438,29 +363,85 @@
         <a href="#services">Services</a>
       </nav>
       <div class="footer-icon">
-        <a href="https://www.github.com/doplersweb"><i class="fa fa-github " aria-hidden="true"></i></a>
-      <a href="https://www.twitter.com/0nwuka0nyema"><i class="fa fa-twitter " aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/0nwuka0nyema"><i class="fa fa-instagram " aria-hidden="true"></i></a>
-            <i class="fa fa-google-plus " aria-hidden="true"></i>
+        <a href="https://www.github.com/doplersweb"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.twitter.com/0nwuka0nyema"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/0nwuka0nyema"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
       </div>
-      <p>	&#169; Copyright 2023 Onwuka Onyemaechi. All Rights Reserved</p>
+      <p>&#169; Copyright 2023 Onwuka Onyemaechi. All Rights Reserved</p>
     </div>
   </body>
 </html>
 <script>
   const handleSubmit = (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => navigate("/thank-you/"))
-    .catch((error) => alert(error));
-};
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
 
+  document.addEventListener("DOMContentLoaded", () => {
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    darkModeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      applySkillsLightMode();
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const menuBtn2 = document.getElementById("menu-btn2");
+    const nav = document.getElementById("nav");
+
+    menuBtn.addEventListener("click", () => {
+      nav.classList.add("open");
+      menuBtn.style.display = "none";
+      menuBtn2.style.display = "block";
+    });
+
+    menuBtn2.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuBtn.style.display = "block";
+      menuBtn2.style.display = "none";
+    });
+
+    // Counter functionality
+    const yearsExperience = document.getElementById("year");
+    const projectsCompleted = document.getElementById("pj");
+    const cupsOfCoffee = document.getElementById("cof");
+    const happyClients = document.getElementById("cl");
+
+    const updateCounter = (element, target) => {
+      let count = 0;
+      const update = () => {
+        if (count < target) {
+          count++;
+          element.textContent = count;
+          setTimeout(update, 50);
+        } else {
+          element.textContent = target;
+        }
+      };
+      update();
+    };
+
+    updateCounter(yearsExperience, 4);
+    updateCounter(projectsCompleted, 70);
+    updateCounter(cupsOfCoffee, 40);
+    updateCounter(happyClients, 50);
+  });
 </script>
