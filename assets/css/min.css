@@ -992,6 +992,10 @@ nav > a {
     padding: 10px;
     margin: 20px;
   }
+  .a {
+    grid-template: 1fr / 50px 1fr;
+    gap: 10px;
+  }
   .dark-contactIn {
     width: fit-content;
     height: fit-content;
@@ -1077,7 +1081,7 @@ nav > a {
   }
 
   .skills {
-    top: 1850px;
+    top: 1904px;
   }
   .dark-skills {
     top: 1850px;
