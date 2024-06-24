@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Simulate a delay for demo purposes, remove in production
-  setTimeout(hidePreloader, 2000);
+  // setTimeout(hidePreloader, 2000);
 
-  // For real-world usage, you might want to use the window's load event
-  // window.addEventListener('load', hidePreloader);
+  //For real-world usage, you might want to use the window's load event
+  window.addEventListener("load", hidePreloader);
 });
 
 // Apply light mode styles

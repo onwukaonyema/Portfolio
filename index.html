@@ -13,11 +13,27 @@
       name="description"
       content="A brief description of your website for SEO purposes."
     />
-
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '359990feb26db2ea8206e6d3ab08047416e35d18';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yourwebsite.com/" />
     <meta property="og:title" content="Your Website Title" />
+
     <meta
       property="og:description"
       content="A brief description of your website for social media sharing."
@@ -47,6 +63,15 @@
   </head>
 
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          duration: 4000, // duration of animation in milliseconds
+          once: false, // whether animation should happen only once - while scrolling down
+        });
+      });
+    </script>
     <!--preloader-->
     <div class="loaders">
       <div class="loader">
@@ -63,7 +88,11 @@
         <a href="#skills">Skills</a>
         <a href="#project">Portfolio</a>
         <a href="#services">Services</a>
-        <i class="fa fa-moon-o" id="dark-mode-toggle" aria-hidden="true"></i>
+        <i
+          class="fa fa-moon-o"
+          id="dark-mode-toggle"
+          onclick="applyDarkMode(); applySkillsDarkMode(); applySkillsLightMode();"
+        ></i>
       </div>
       <i
         class="fa fa-bars"
@@ -103,12 +132,12 @@
             <i class="fa fa-google-plus icon" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="banner-right">
+        <div class="banner-right" data-aos="fade-left">
           <img src="/assets/images/intro.png" alt="illust." class="sideImg" />
         </div>
       </div>
     </div>
-    <div class="introduction" id="introduction">
+    <div class="introduction" id="introduction" data-aos="fade-right">
       <div class="intro1">
         <div class="intro1a">
           <img src="/assets/images/433270.png" class="boy" alt="boy" />
